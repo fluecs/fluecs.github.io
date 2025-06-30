@@ -1,7 +1,10 @@
 body {
 	margin: 0;
 	background-color: white;
-	font-family: 'Courier New', Courier, monospace;
+}
+
+* {
+	font-family: Palatino, URW Palladio L, serif ;
 }
 
 .content {
@@ -16,19 +19,30 @@ h1 {
 	padding-bottom: 1em;
 	width:100%;
 	position: relative;
-	background-color: #0bad77;
-	border-radius: 25%;
+	border-radius: 25px;
+	color: #137;
+}
+
+h2 {
+	color: #137;
 }
 
 p {
 	text-align: justify;
 	margin-bottom: 0;
+	border-left: 1px solid #137;
+	padding-left: 1em;
+}
+
+li {
+	color: #227;
 }
 
 p::first-letter {
   border-radius: 2px;
   font-size: 250%;
-  padding: 6px 3px;
+  padding: 3px 3px;
   margin-right: 6px;
   float: left;
+  color: #137;
 }
