@@ -1,0 +1,19 @@
+body {
+	margin: 0;
+	background-color: white;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.content {
+	padding: 10em;
+}
+
+h1 {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	
+}
+
+p {
+	text-align: justify;
+}
