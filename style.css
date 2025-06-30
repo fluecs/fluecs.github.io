@@ -5,7 +5,9 @@ body {
 }
 
 .content {
-	padding: 10em;
+	padding: 20em;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 h1 {
@@ -16,4 +18,5 @@ h1 {
 
 p {
 	text-align: justify;
+	margin-bottom: 0;
 }
