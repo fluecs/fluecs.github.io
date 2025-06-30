@@ -8,12 +8,16 @@ body {
 	padding: 20em;
 	padding-top: 0px;
 	padding-bottom: 0px;
+	position: absolute;
 }
 
 h1 {
 	padding-top: 1em;
 	padding-bottom: 1em;
-	
+	width:100%;
+	position: relative;
+	background-color: #0bad77;
+	border-radius: 25%;
 }
 
 p {
