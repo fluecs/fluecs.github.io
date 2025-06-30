@@ -20,3 +20,11 @@ p {
 	text-align: justify;
 	margin-bottom: 0;
 }
+
+p::first-letter {
+  border-radius: 2px;
+  font-size: 250%;
+  padding: 6px 3px;
+  margin-right: 6px;
+  float: left;
+}
