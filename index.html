@@ -4,8 +4,90 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My hobbies</title>
+	<title>Sights of Bulgaria</title>
 	<link rel="stylesheet" href="style.css">
+	<style>
+		* {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+	background: #FFF;
+	background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(255, 0, 0, 1) 100%);
+	height: 100vh;
+}
+
+.content-grid {
+	flex-wrap: wrap;
+	position: absolute;
+	width: 70vw;
+	height: 40vw;
+	left: 15vw;
+	top: calc((100% - 40vw) / 2);
+	display: inline-flex;
+}
+
+.image {
+	width: 48%;
+	height: 48%;
+	display: inline-flex;
+	position: relative;
+	padding: 1%;
+	cursor: pointer;
+	transition: 200ms all ease-in-out;
+}
+
+.image:hover {
+	z-index: 20;
+	transform: scale(1.075);
+	filter: brightness(110%) saturate(75%);
+}
+
+.image:hover .cover {
+	height: 100%;
+	border-radius: 2rem;
+}
+
+.image:hover p {
+	font-size: 1.1rem;
+}
+
+.image-inner {
+	position: relative;
+	border-radius: 2rem;
+	box-shadow: 0px 0px .25rem #333;
+}
+
+.image:hover .image-inner {
+	box-shadow: 0px 0px 2rem #333;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit:fill;
+	border-radius: 2rem;
+}
+
+.cover {
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	height: 30%;
+	left: 0%;
+	color: white;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+	border-radius: 0 0 2rem 2rem;
+	transition: 200ms all ease-in-out;
+}
+
+.cover p {
+	position: absolute;
+	bottom: .25em;
+	right: 1em;
+	transition: all 200ms ease-in-out;
+}
+	</style>
 </head>
 
 <body>
