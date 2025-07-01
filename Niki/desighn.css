@@ -1,0 +1,17 @@
+h2{
+   text-align: center;
+background-color: darkgrey;
+text-decoration-color: azure;
+
+color: rgb(242, 236, 228);
+}
+
+p{
+    text-size-adjust: 14;
+}
+
+picture
+{
+    display: flex;
+   justify-content: center;
+}
