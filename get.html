@@ -7,11 +7,21 @@
 </head>
 <body>
 	<script>
-		const responce = await fetch("GET https://bored-api.appbrewery.com/random");
-		if (responce.ok)
-			console.log(responce.json())
-		else
-			console.log(`Error ${responce.status}, ${responce.statusText}`);
+		async function GetAPIData() {
+			const responce = await fetch("https://bored-api.appbrewery.com/random",
+				{
+           			mode: 'cors'
+				}
+			);
+			if (responce.ok) {
+				const json = await responce.json();
+				console.log(json)
+			}
+			else
+				console.log(`Error ${responce.status}, ${responce.statusText}`);
+		}
+		
+		GetAPIData();
 	</script>
 </body>
 </html>
